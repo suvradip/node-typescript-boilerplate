@@ -1,0 +1,32 @@
+{
+  "env": {
+    "browser": false,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/eslint-recommended", "plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "prettier/prettier": "error",
+    "max-len": ["warn", { "code": 130 }],
+    "no-useless-escape": "warn",
+    "no-prototype-builtins": "warn",
+    "no-duplicate-case": "warn",
+    "no-dupe-else-if": "warn",
+    "no-constant-condition": "warn",
+    "newline-after-var": "error",
+    "no-return-await": "error",
+    "no-async-promise-executor": "warn",
+    "no-self-assign": "warn",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/ban-types": "warn",
+    "@typescript-eslint/no-empty-interface": "warn",
+    "@typescript-eslint/no-this-alias": "warn"
+  }
+}
